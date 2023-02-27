@@ -9,9 +9,15 @@ import com.example.pickapic.ui.screens.*
 @Composable
 fun Navigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Screen.HomeScreen.route) {
+    NavHost(navController = navController, startDestination = Screen.LoginScreen.route) {
+        composable(route = Screen.LoginScreen.route) {
+            LoginScreen(navController = navController)
+        }
+        composable(route = Screen.RegistrationScreen.route) {
+            RegistrationScreen(navController = navController)
+        }
         composable(route = Screen.HomeScreen.route) {
-            HomeScreen(navController)
+            HomeScreen(navController = navController)
         }
         composable(route = Screen.PicturesScreen.route) {
             val topic = it.arguments?.getString("topic")

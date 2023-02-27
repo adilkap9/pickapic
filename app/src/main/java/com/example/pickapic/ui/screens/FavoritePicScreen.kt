@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.takeOrElse
 import androidx.compose.ui.res.stringResource
 import com.example.pickapic.R
 import com.example.pickapic.ui.composables.TitleCard
+import com.example.pickapic.ui.theme.Pencil700
 import com.example.pickapic.ui.theme.PickapicTheme
 
 @Composable
@@ -23,7 +24,7 @@ fun FavouritePicScreen() {
             Column(
                 modifier = Modifier
             ) {
-                TitleCard(text = stringResource(id = R.string.fav_title))
+                TitleCard(text = stringResource(id = R.string.fav_title), Pencil700)
             }
         }
     }

@@ -45,5 +45,11 @@ val RubikTypography = Typography(
         fontSize = 16.sp,
         letterSpacing = (-1.5).sp,
         color = Color.White
+    ),
+    body2 = TextStyle(
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        letterSpacing = (-1.5).sp,
+        color = Color.Black
     )
 )

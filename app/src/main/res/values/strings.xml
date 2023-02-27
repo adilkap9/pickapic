@@ -5,4 +5,5 @@
     <string name="query_limit_reached">Query limit reached</string>
     <string name="no_data_available">Could not load pictures</string>
     <string name="problem_occurred">We have a problem</string>
+    <string name="login">Sign In</string>
 </resources>

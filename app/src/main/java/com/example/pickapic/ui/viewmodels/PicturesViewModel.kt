@@ -22,6 +22,9 @@ class PicturesViewModel @Inject constructor (
     private val _uiState = MutableStateFlow<PicturesUiState>(PicturesUiState.Empty)
     val uiState: StateFlow<PicturesUiState> = _uiState
 
+    private val _currentPictureUrl = MutableStateFlow("")
+    val currentPictureUrl: StateFlow<String> = _currentPictureUrl
+
 
     fun fetchPicturesByTopic(topic: String) {
         _uiState.value = PicturesUiState.Loading
@@ -60,5 +63,9 @@ class PicturesViewModel @Inject constructor (
         _uiState.value = PicturesUiState.Error(
             "Something went wrong"
         )
+    }
+
+    fun updateCurrentPictureUrl(url: String) {
+        _currentPictureUrl.value = url
     }
 }

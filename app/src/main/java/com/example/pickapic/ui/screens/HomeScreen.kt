@@ -43,7 +43,7 @@ fun HomeScreen(navController: NavController) {
             Column(
                 modifier = Modifier
             ) {
-                TitleCard(stringResource(id = R.string.home_title))
+                TitleCard(stringResource(id = R.string.home_title), Pencil700)
                 TopicsRow(navController)
                 SearchBar(navController)
             }

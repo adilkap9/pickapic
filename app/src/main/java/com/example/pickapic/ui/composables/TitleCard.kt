@@ -11,15 +11,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.pickapic.ui.theme.Pencil700
 import com.example.pickapic.ui.theme.SemiRoundedShapes
+import androidx.compose.ui.graphics.Color
 
 @Composable
-fun TitleCard(text: String) {
+fun TitleCard(text: String, color: Color) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),
         elevation = 16.dp,
         shape = SemiRoundedShapes.large,
-        backgroundColor = Pencil700
+        backgroundColor = color
     ) {
         TitleText(text)
     }
